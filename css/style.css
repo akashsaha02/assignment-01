@@ -208,3 +208,62 @@ web-dev-card-img img {
     height: 550px;
     border-radius: 16px;
 }
+
+#target {
+    margin-bottom: 110px;
+}
+
+.target-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 50px;
+    margin-top: 32px;
+    border-radius: 16px;
+    background: linear-gradient(90.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+}
+
+.target-card {
+    padding: 40px;
+    border-radius: 16px;
+    background: rgba(0, 76, 232, 0.05);
+}
+
+.target-card:first-child {
+    background: rgba(255, 76, 30, 0.05);
+}
+
+.target-card:last-child {
+    background: rgba(255, 223, 0, 0.05);
+}
+
+.target-card h3 {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0%;
+}
+
+.target-card p {
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.target-card button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+    border: none;
+    background-color: transparent;
+}
