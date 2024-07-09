@@ -45,6 +45,17 @@
     text-align: center;
 }
 
+.btn-learn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+    border: none;
+    background-color: transparent;
+}
+
 /* Header Section */
 header {
     background-color: #ffffff;
@@ -257,13 +268,51 @@ web-dev-card-img img {
     margin-bottom: 24px;
 }
 
-.target-card button {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
+#target-next {
+    margin-bottom: 50px;
+}
+
+.target-next-cards {
+    margin-top: 50px;
+}
+
+.target-next-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    margin-top: 24px;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.target-next-card:first-child {
+margin-top: 0;
+}
+
+.target-next-img {
+    width: 15%;
+}
+
+.target-next-img img {
+    width: 100%;
+}
+
+.target-next-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
     letter-spacing: 0%;
-    text-align: left;
-    text-decoration-line: underline;
-    border: none;
-    background-color: transparent;
+}
+
+.target-next-card P {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    opacity: 0.7;
+    margin-top: 8px;
+    margin-bottom: 24px;
 }
