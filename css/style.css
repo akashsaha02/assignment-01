@@ -9,6 +9,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Common Section */
 
 .btn-primary {
@@ -19,7 +23,12 @@
     border-radius: 10px;
     background-color: #ffffff;
     font-weight: 600;
+    transition: 0.33s ease-in-out;
+}
 
+.btn-primary:hover {
+    background-color: rgb(13, 19, 33);
+    color: #ffffff;
 }
 
 .container {
@@ -43,6 +52,8 @@
     line-height: 26px;
     letter-spacing: 0%;
     text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .btn-learn {
@@ -54,6 +65,12 @@
     text-decoration-line: underline;
     border: none;
     background-color: transparent;
+    transition: 0.33s ease-in-out;
+}
+
+.btn-learn:hover{
+    color: rgb(13, 19, 33, 0.7);
+
 }
 
 /* Header Section */
@@ -84,6 +101,8 @@ main {
     margin: 0 auto;
 }
 
+/* Hero Section */
+
 #hero {
     display: flex;
     justify-content: center;
@@ -98,8 +117,6 @@ main {
     text-align: center;
 
 }
-
-#hero-img {}
 
 #hero h1 {
     font-size: 48px;
@@ -122,6 +139,13 @@ main {
     background-color: rgb(13, 19, 33);
     color: #ffffff;
 }
+.contact-btn:hover{
+    background-color: #ffffff;
+    color: rgb(13, 19, 33);
+}
+
+
+/* Web-Dev Section */
 
 #web-dev {
     margin-top: 75px;
@@ -130,11 +154,6 @@ main {
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
 }
-
-
-#web-dev>h2 {}
-
-#web-dev>p {}
 
 .wev-dev-cards {
     margin-top: 50px;
@@ -160,7 +179,6 @@ main {
     background: linear-gradient(270.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
 }
 
-
 .web-dev-card-content h3 {
     color: rgba(13, 19, 33, 0.7);
     font-size: 24px;
@@ -180,6 +198,7 @@ main {
     text-align: left;
     margin-top: 16px;
     margin-bottom: 32px;
+    margin-right: 80px;
 }
 
 .web-dev-card-content button {
@@ -191,7 +210,14 @@ main {
     letter-spacing: 0%;
     border: 1px solid rgb(13, 19, 33);
     background-color: transparent;
+    transition: 0.33s ease-in-out;
 }
+
+.web-dev-card-content button:hover {
+    background-color: rgb(13, 19, 33);
+    color: #ffffff;
+}
+
 
 web-dev-card-img {
     width: 30%;
@@ -200,6 +226,8 @@ web-dev-card-img {
 web-dev-card-img img {
     width: 100%;
 }
+
+/* Inspiration Section */
 
 #inspiration {
     margin-bottom: 150px;
@@ -220,6 +248,8 @@ web-dev-card-img img {
     border-radius: 16px;
 }
 
+/* Target Section  */
+
 #target {
     margin-bottom: 110px;
 }
@@ -236,6 +266,7 @@ web-dev-card-img img {
 }
 
 .target-card {
+    width: 30%;
     padding: 40px;
     border-radius: 16px;
     background: rgba(0, 76, 232, 0.05);
@@ -268,6 +299,8 @@ web-dev-card-img img {
     margin-bottom: 24px;
 }
 
+/* Target Next Section */
+
 #target-next {
     margin-bottom: 50px;
 }
@@ -289,7 +322,7 @@ web-dev-card-img img {
 }
 
 .target-next-card:first-child {
-margin-top: 0;
+    margin-top: 0;
 }
 
 .target-next-img {
@@ -315,4 +348,100 @@ margin-top: 0;
     opacity: 0.7;
     margin-top: 8px;
     margin-bottom: 24px;
+}
+
+/* Support Section */
+
+#support {
+    border-radius: 16px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/handshake.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 64px 48px;
+    margin-bottom: 80px;
+}
+
+#support h2 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#support p {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 16px 100px 24px 100px;
+}
+
+.support-form {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.support-form>.support-input {
+    width: 60%;
+}
+
+.support-form input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+
+.support-form input:placeholder-shown {
+    color: rgba(13, 19, 33, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    padding: 20px 18px;
+
+}
+
+.support-form button {
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    padding: 18px 20px;
+    border: none;
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 150px;
+    background: rgba(13, 19, 33, 0.03);
+}
+
+footer h4 {
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+footer a {
+    margin-left: 24px;
 }
